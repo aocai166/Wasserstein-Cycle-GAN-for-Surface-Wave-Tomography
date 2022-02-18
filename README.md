@@ -2,11 +2,8 @@
 Code and Benchmark Examples for JGR: Solid Earth paper
 
 Cai, A., Qiu, H., & Niu, F. (2022). Semi-supervised surface wave tomography with Wasserstein cycle-consistent GAN: 
-
 Method and application to Southern California plate boundary region. 
-
 Journal of Geophysical Research: Solid Earth, 127, e2021JB023598.
-
 https://doi.org/10.1029/2021JB023598
 
 Please download the attached "For_Neng" folder, after you have unzipped it. There will be a code folder and the "data_region" folder. All the labeled data from CVMH model and unlabeled dispersion curves are prepared in that folder.
