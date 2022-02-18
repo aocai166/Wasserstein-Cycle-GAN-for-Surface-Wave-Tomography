@@ -5,7 +5,7 @@ Cai, A., Qiu, H., & Niu, F. (2022). Semi-supervised surface wave tomography with
 Journal of Geophysical Research: Solid Earth, 127, e2021JB023598. <br />
 https://doi.org/10.1029/2021JB023598
 
-You can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 of the License only. <br />
+You can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0. <br />
 If you show inversion results in a paper or presentation please give a reference to the JGR paper
 
 If you have questions when using the package, you can contact me at aocai166@gmail.com <br />
