@@ -6,7 +6,13 @@ Method and application to Southern California plate boundary region.
 Journal of Geophysical Research: Solid Earth, 127, e2021JB023598.
 https://doi.org/10.1029/2021JB023598
 
-Please download the attached "For_Neng" folder, after you have unzipped it. There will be a code folder and the "data_region" folder. All the labeled data from CVMH model and unlabeled dispersion curves are prepared in that folder.
+You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.0 of the License only
+If you show inversion results in a paper or presentation please give a reference to the JGR paper
+
+A brief description of the use of code for a bench mark example is provided.
+If you have questions when using the package, you can contact me at aocai166@gmail.com
+
+All the labeled data from CVMH model and unlabeled dispersion curves are prepared in the folder 'Data/'.
 
 To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Qiu_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
 
