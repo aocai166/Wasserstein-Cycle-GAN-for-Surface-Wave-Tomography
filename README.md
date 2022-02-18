@@ -1,3 +1,10 @@
 # Wasserstein-Cycle-GAN-for-Surface-Wave-Tomography
 Code and Benchmark Examples for JGR: Solid Earth paper
-![Figure3](https://user-images.githubusercontent.com/35436104/154750495-c5376a15-ec19-42fa-8c32-3761f2527d6f.JPG)
+
+Please download the attached "For_Neng" folder, after you have unzipped it. There will be a code folder and the "data_region" folder. All the labeled data from CVMH model and unlabeled dispersion curves are prepared in that folder.
+
+To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Qiu_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
+
+Then you can run this file and the training will start, you need to build up the environment to run this code, an easy way to know what to install is looking at all the "import ...", then you know what packages are needed, they can be easily installed in the anaconda environment. What's important is that please use the tensorflow version 1.14.0. The current code is not compatible with tensorflow version higher than 2.0.
+
+To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-gp-tf_Qiu_1D.py", you will see "Train", "Test" and "Predict" modes are available. Simply change the mode value will work. But when you want to use "Test" and "Predict" module, please first generate a folder named "predict" in your output directory.
