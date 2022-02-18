@@ -1,15 +1,15 @@
 # Wasserstein-Cycle-GAN-for-Surface-Wave-Tomography
-Code and Benchmark Examples for JGR: Solid Earth paper
+Code and Benchmark Examples for a JGR: Solid Earth paper
 
 Cai, A., Qiu, H., & Niu, F. (2022). Semi-supervised surface wave tomography with Wasserstein cycle-consistent GAN: 
 Method and application to Southern California plate boundary region. 
 Journal of Geophysical Research: Solid Earth, 127, e2021JB023598.
 https://doi.org/10.1029/2021JB023598
 
-You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3.0 of the License only. <br />
+You can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0 of the License only. <br />
 If you show inversion results in a paper or presentation please give a reference to the JGR paper
 
-A brief description of the use of code for a bench mark example is provided.
+A bench mark example is given below. <br />
 If you have questions when using the package, you can contact me at aocai166@gmail.com
 
 All the labeled data from CVMH model and unlabeled dispersion curves are prepared in the folder 'Data/'.
