@@ -126,6 +126,10 @@ Change the mode to 'Train', chose the maximum number of epochs, *batch_size* her
 
 If ***startfrombeg=True***, training starts from random initialization. If not, the training start from the previously trained networks. After set up, run the code.
 
+During the training, there will be output image showing current prediction Vs quality in labeled dataset (Figure S5 of Cai et al. (2022))
+![FigureS5](https://user-images.githubusercontent.com/35436104/154820774-ce44d205-9c67-4e1a-86a1-c9b8e2d3fc1f.JPG)
+
+
 ### (5) Test the Wcycle-GAN on 100 randomly selected grid cells <br />
 First generate a folder named "predict" in your output directory.
 
