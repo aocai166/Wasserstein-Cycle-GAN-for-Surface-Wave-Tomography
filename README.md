@@ -74,6 +74,19 @@ self.vs_channels = 1
 ```
 Here the dispersion data is of dimension 17x2, and Vs model is of dimension 99x1. Lsize and Usize are the batch sizes of labeled and unlabeled data used in training, respectively. <br />
 
+What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
+```
+# Path to the folder of labeled data (e.g., disp_region/)
+self.file_train_path = 'D:/PycharmProjects/GPUpy/Qiu_data/CVMHTrainingDataset/Train_dat/'
+# Path to the folder of labeled data (not used as the test data is a numpy file)
+self.test_disp_path = 'D:/PycharmProjects/GPUpy/Qiu_data/CVMHTrainingDataset/linear_test/'
+# Path to the directory where you want to store the results
+self.out_path = 'D:/PycharmProjects/GPUpy/Qiu_data/CVMHTrainingDataset/Final_results/output_region_chi/'
+# type of test data, vary between txt and npy
+self.test_dtype = 'npy'
+self.save_freq = 25
+```
+
 Near the end lines of the code, you can find the code blocks
 ```
 if __name__ == "__main__":
@@ -93,8 +106,6 @@ if __name__ == "__main__":
 ```
 There are several modules, including <br />
 
-
-To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Vs_inv_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
 
 Then you can run this file and the training will start, you need to build up the environment to run this code, an easy way to know what to install is looking at all the "import ...", then you know what packages are needed, they can be easily installed in the anaconda environment. What's important is that please use the tensorflow version 1.14.0. The current code is not compatible with tensorflow version higher than 2.0.
 
