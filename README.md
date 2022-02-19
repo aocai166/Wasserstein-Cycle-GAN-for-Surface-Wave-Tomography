@@ -119,7 +119,14 @@ if __name__ == "__main__":
     else:
         print("Only training, testing and predicting modules are available")
 ```
-There are several modules, including <br />
+There are several modules, including ***Train***, ***Test***, ***Predict***.
+
+### (4) Training the Wcycle-GAN <br />
+Change the mode to 'Train', chose the maximum number of epochs, *batch_size* here is not used. ***sample_interval*** controls how often you want to calculate the training loss function. The loss function is calculated by the mean-square error (MSE) between the predicted and labeled Vs profiles on randomly selected 100 grid cells.
+
+If ***startfrombeg=True***, training starts from random initialization. If not, the training start from the previously trained networks.
+
+### (4) Test the Wcycle-GAN on 100 randomly selected grid cells <br />
 
 
 To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-gp-tf_Qiu_1D.py", you will see "Train", "Test" and "Predict" modes are available. Simply change the mode value will work. But when you want to use "Test" and "Predict" module, please first generate a folder named "predict" in your output directory.
