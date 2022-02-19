@@ -129,9 +129,14 @@ If ***startfrombeg=True***, training starts from random initialization. If not, 
 ### (5) Test the Wcycle-GAN on 100 randomly selected grid cells <br />
 First generate a folder named "predict" in your output directory.
 
-Change the mode to 'Test', direction='G2P' is predicting Vs models from dispersion curves using model generative network, direction='P2G' is predicting dispersion curves from Vs profiles using data generative network. The ***loss*** printed out here will be the MSE of the whole labeled dataset.
+Change the mode to 'Test'. direction='G2P' is predicting Vs models from dispersion curves using model generative network, direction='P2G' is predicting dispersion curves from Vs profiles using data generative network. The ***loss*** printing out here will be the MSE of the whole labeled dataset. Run the code.
 
-### (6) Predict 1-D Vs profiles from real dispersion curves and assemble to pseudo 3-D model <br />
+### (6) Predict 1-D *Vs* profiles from real dispersion curves and assemble to pseudo 3-D model <br />
+Change the mode to 'Predict', run the code.
+
+The output will be a 3-D matrix of dimension (4076, 99, 4)
+<pre> Longtitude    Latitude    Depth (0km-49km)    Shear Wave Velocity (Vs; km/s) </pre>
+
 
 
 ### (7) Plotting your results
