@@ -43,3 +43,7 @@ To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-
 *Qiu, H., Lin, F. C., & Ben-Zion, Y. (2019). Eikonal Tomography of the Southern California Plate Boundary Region. Journal of Geophysical Research: Solid Earth, 124(9), 9755–9779. https://doi.org/10.1029/2019JB017806*
 
 *Shaw, J. H., Plesch, A., Tape, C., Suess, M. P., Jordan, T. H., Ely, G., et al. (2015). Unified Structural Representation of the southern California crust and upper mantle. Earth and Planetary Science Letters, 415, 1–15. https://doi.org/10.1016/j.epsl.2015.01.016*
+
+*Yi, Z., Zhang, H., Tan, P., & Gong, M. (2017). DualGAN: Unsupervised Dual Learning for Image-to-Image Translation. Proceedings of the IEEE International Conference on Computer Vision, 2017-October, 2868–2876. https://doi.org/10.1109/ICCV.2017.310*
+
+*Zhu, J.-Y., Park, T., Isola, P., Efros, A. A., & Research, B. A. (2017). Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks Monet Photos. Retrieved from https://github.com/junyanz/CycleGAN.*
