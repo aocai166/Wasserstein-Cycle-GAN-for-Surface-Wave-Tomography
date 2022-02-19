@@ -140,11 +140,11 @@ The output will be a 3-D matrix of dimension (4076, 99, 4) in .npy format
 ### (7) Plotting your results
 The plotting scripts is not summarized here but might be provided in the future. Generally, I used Jupyter Notebook to transfer the .npy file to the Velocity text files for different depth sections and plotted them using the Generic Mapping Tools (GMT). The cross-sections are plotted using python scripts. Examples are given below
 
-#### Depth section examples 
+#### Depth section examples (Figure 7 of Cai et al. (2022))
 ![Figure7](https://user-images.githubusercontent.com/35436104/154765285-227c78f2-667c-4b53-a232-7c6fb84e2e75.JPG)
 
 
-#### Cross section examples
+#### Cross section examples (Figure 8 of Cai et al. (2022))
 
 ## References
 *Arjovsky, M., & Bottou, L. (2017). Towards Principled Methods for Training Generative Adversarial Networks. 5th International Conference on Learning Representations. Retrieved from https://arxiv.org/abs/1701.04862v1*
