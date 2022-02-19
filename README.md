@@ -54,6 +54,8 @@ A (4076, 17, 5) matrix, containing the information of <br />
 A (4076, 17, 7) matrix, containing the information of <br />
 <pre> Longtitude    Latitude    Periods (3s-16s)    Phase Velocity (km/s)    Group Velocity (km/s)    Uncertainty of Phase Velocity (km/s)    Uncertainty of Group Velocity (km/s)</pre>
 
+### (3) Download the source code (**Folder 'Src/'**) <br />
+
 
 To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Vs_inv_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
 
