@@ -57,8 +57,20 @@ A (4076, 17, 7) matrix, containing the information of <br />
 ### (3) Download the source code (**Folder 'Src/'**) <br />
 The source code folder contains deep learning Vs inversion of several methods presented in *Cai et al., (2020)*, including **Convolutional Neural Networks (CNN)**, **Cycle-GAN or LS-Cycle-GAN**, **Wcycle-GAN**, **Wcycle-GAN+Position**.
 
-The instruction of the codes are very similar. Here the Wcycle-GAN example (*Wcyclegan-gp-tf_Vs_inv_1D.py*) is illustrated. <br />
+The instruction of the codes are very similar. Here the Wcycle-GAN example is illustrated. <br />
 
+The data used in the training is controled in the (*Vs_inv_data_loader.py*)
+```
+self.file_disp_path = self.file_train_path + 'disp_region/'
+self.file_vs_path = self.file_train_path + 'Vs_region/'
+self.test_disp_path = test_disp_path
+self.out_path = out_path
+#self.tdname = 'test_data_Qiu.npy'
+self.tdname = 'test_data_Qiu_sigma.npy'
+```
+The data 'disp_region/' and 'Vs_region/' are explained in the previous section.
+
+The main body of the Wcycle-GAN based Vs inversion is at (*Wcyclegan-gp-tf_Vs_inv_1D.py*)
 First check some basic parameters and file settings (the values are ready for the benckmark examples)
 ```
 self.disp_dim = 17
@@ -109,8 +121,6 @@ if __name__ == "__main__":
 ```
 There are several modules, including <br />
 
-
-Then you can run this file and the training will start, you need to build up the environment to run this code, an easy way to know what to install is looking at all the "import ...", then you know what packages are needed, they can be easily installed in the anaconda environment. What's important is that please use the tensorflow version 1.14.0. The current code is not compatible with tensorflow version higher than 2.0.
 
 To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-gp-tf_Qiu_1D.py", you will see "Train", "Test" and "Predict" modes are available. Simply change the mode value will work. But when you want to use "Test" and "Predict" module, please first generate a folder named "predict" in your output directory.
 
