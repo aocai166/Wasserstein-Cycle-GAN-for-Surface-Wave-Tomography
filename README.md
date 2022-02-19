@@ -59,7 +59,7 @@ The source code folder contains deep learning Vs inversion of several methods pr
 
 The instruction of the codes are very similar. Here the Wcycle-GAN example is illustrated. <br />
 
-The data used in the training is controled in the (*Vs_inv_data_loader.py*)
+The data used in the training is controled in the (***Vs_inv_data_loader.py***)
 ```
 self.file_disp_path = self.file_train_path + 'disp_region/'
 self.file_vs_path = self.file_train_path + 'Vs_region/'
@@ -68,9 +68,9 @@ self.out_path = out_path
 #self.tdname = 'test_data_Qiu.npy'
 self.tdname = 'test_data_Qiu_sigma.npy'
 ```
-The data 'disp_region/' and 'Vs_region/' are explained in the previous section.
+The labeled data '**disp_region/**' and '**Vs_region/**' and unlabeled data '**test_data_Qiu_sigma.npy**' are explained in the previous section.
 
-The main body of the Wcycle-GAN based Vs inversion is at (*Wcyclegan-gp-tf_Vs_inv_1D.py*)
+The main body of the Wcycle-GAN based Vs inversion is at (***Wcyclegan-gp-tf_Vs_inv_1D.py***)
 First check some basic parameters and file settings (the values are ready for the benckmark examples)
 ```
 self.disp_dim = 17
