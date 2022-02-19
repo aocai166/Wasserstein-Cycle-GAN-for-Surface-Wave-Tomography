@@ -6,7 +6,7 @@ Journal of Geophysical Research: Solid Earth, 127, e2021JB023598. <br />
 https://doi.org/10.1029/2021JB023598
 
 ## Basic Notations <br />
-The name of the deep learning method is **Wasserstein Cycle-GAN-GP**, a hybrid method of **Wasserstein GAN-GP** (*Arjovsky and Bottou, 2017; Arjovsky et al., 2017*) and **Cycle-GAN** (*Yi et al., 2017; Zhu et al., 2017*). **GP** stands for gradient penalty.
+The name of the deep learning method is **Wasserstein Cycle-GAN-GP (WCycle-GAN)**, a hybrid method of **Wasserstein GAN-GP** (*Arjovsky and Bottou, 2017; Arjovsky et al., 2017*) and **Cycle-GAN** (*Yi et al., 2017; Zhu et al., 2017*). **GP** stands for gradient penalty.
 
 You can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0. <br />
 If you show inversion results in a paper or presentation please give a reference to the JGR paper
@@ -55,6 +55,27 @@ A (4076, 17, 7) matrix, containing the information of <br />
 <pre> Longtitude    Latitude    Periods (3s-16s)    Phase Velocity (km/s)    Group Velocity (km/s)    Uncertainty of Phase Velocity (km/s)    Uncertainty of Group Velocity (km/s)</pre>
 
 ### (3) Download the source code (**Folder 'Src/'**) <br />
+The source code folder contains deep learning Vs inversion of several methods presented in *Cai et al., (2020)*, including **Convolutional Neural Networks (CNN)**, **Cycle-GAN or LS-Cycle-GAN**, **Wcycle-GAN**, **Wcycle-GAN+Position**.
+
+The instruction of the codes are very similar. Here the Wcycle-GAN example (*Wcyclegan-gp-tf_Vs_inv_1D.py*) is illustrated.
+
+Near the end lines of the code, you can find the code blocks
+```
+if __name__ == "__main__":
+    sess = tf.compat.v1.Session()
+    gan = CycleGAN(sess)
+    mode = 'Train'
+    if mode == 'Train':
+        gan.train(epochs=1201, batch_size=5, sample_interval=25, startfrombeg=True)
+    elif mode == 'Test':
+        gan.test(direction='G2P', drawline=True)
+        loss = gan.rms_misfit(mode=mode)
+        print(loss)
+    elif mode == 'Predict':
+        gan.predict_vol(direction='G2P')
+    else:
+        print("Only training, testing and predicting modules are available")
+```
 
 
 To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Vs_inv_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
