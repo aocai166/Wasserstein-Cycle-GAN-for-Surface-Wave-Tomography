@@ -122,11 +122,19 @@ if __name__ == "__main__":
 There are several modules, including ***Train***, ***Test***, ***Predict***.
 
 ### (4) Training the Wcycle-GAN <br />
-Change the mode to 'Train', chose the maximum number of epochs, *batch_size* here is not used. ***sample_interval*** controls how often you want to calculate the training loss function. The loss function is calculated by the mean-square error (MSE) between the predicted and labeled Vs profiles on randomly selected 100 grid cells.
+Change the mode to 'Train', chose the maximum number of epochs, *batch_size* here is not used. ***sample_interval*** controls how often you want to calculate the training loss function. The loss function is calculated by the mean-square error (MSE) between the predicted and labeled Vs profiles on randomly selected 100 grid cells. 
 
-If ***startfrombeg=True***, training starts from random initialization. If not, the training start from the previously trained networks.
+If ***startfrombeg=True***, training starts from random initialization. If not, the training start from the previously trained networks. After set up, run the code.
 
-### (4) Test the Wcycle-GAN on 100 randomly selected grid cells <br />
+### (5) Test the Wcycle-GAN on 100 randomly selected grid cells <br />
+First generate a folder named "predict" in your output directory.
+
+Change the mode to 'Test', direction='G2P' is predicting Vs models from dispersion curves using model generative network, direction='P2G' is predicting dispersion curves from Vs profiles using data generative network. The ***loss*** printed out here will be the MSE of the whole labeled dataset.
+
+### (6) Predict 1-D Vs profiles from real dispersion curves and assemble to pseudo 3-D model <br />
+
+
+### (7) Plotting your results
 
 
 To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-gp-tf_Qiu_1D.py", you will see "Train", "Test" and "Predict" modes are available. Simply change the mode value will work. But when you want to use "Test" and "Predict" module, please first generate a folder named "predict" in your output directory.
