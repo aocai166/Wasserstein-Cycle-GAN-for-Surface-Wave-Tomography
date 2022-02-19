@@ -19,7 +19,9 @@ The code is writing in Python using the **TensorFlow** framework. A benchmark ex
 #### (1) Setup your environment <br />
 The Anaconda enviroment file (*environment.yml*) used in Cai et al. (2022) is provided. <br />
 You can copy my environment using the yml file. <br />
-An **tutorial** can be found here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html <br />
+
+An **tutorial** can be found here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html
+
 **Note**: due to the time of development of this code (2020), I used **TensorFlow 1.14**. It might not be compatable with the recent TensorFlow 2 and above versions.
 
 #### (2) Download the data <br />
