@@ -59,7 +59,7 @@ The source code folder contains deep learning Vs inversion of several methods pr
 
 The instruction of the codes are very similar. Here the Wcycle-GAN example (*Wcyclegan-gp-tf_Vs_inv_1D.py*) is illustrated. <br />
 
-First check some basic parameters and file settings
+First check some basic parameters and file settings (the values are ready for the benckmark examples)
 ```
 self.disp_dim = 17
 self.vs_dim = 99
@@ -72,6 +72,7 @@ self.Usize = self.ulabel // self.Ubatch_rate
 self.disp_channels = 2
 self.vs_channels = 1
 ```
+Here the dispersion data is of dimension 17x2, and Vs model is of dimension 99x1. Lsize and Usize are the batch sizes of labeled and unlabeled data used in training, respectively. <br />
 
 Near the end lines of the code, you can find the code blocks
 ```
