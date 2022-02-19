@@ -39,7 +39,7 @@ The dataset consists of text file for every grid cell. The name of the file cont
 1_32.600_239.800.txt  --> Latitude 32.6N; Longitude 120.2W. <br />
 
 For the data files, it includes: <br />
-Periods (3s-16s) "    "  Phase Velocity (km/s) "    " Group Velocity (km/s)
+<pre> Periods (3s-16s)  Phase Velocity (km/s)  Group Velocity (km/s)  Latitude  Longtitude </pre>
 
 
 
