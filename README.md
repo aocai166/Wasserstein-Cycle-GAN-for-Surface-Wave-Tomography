@@ -34,10 +34,12 @@ There are three set of labeled data. <br />
 (b) The 16480 labeled dispersion data + Position information (**Vs_region** & **disp_pos_region**) <br />
 (c) The downsampled 1890 labeled dispersion data (**Vs_grid01** & **disp_gird01**) <br />
 
-The dataset consists of text file for every grid cell. The name of the file contains the information of its latitude and longitude. For instance: <br />
+The dataset consists of text file for every grid cell. The name of the file contains the information of its latitude and longitude. For instance:
+
 1_32.600_239.800.txt  --> Latitude 32.6N; Longitude 120.2W. <br />
+
 For the data files, it includes: <br />
-Periods (3s-16s)   Phase Velocity (km/s)   Group Velocity (km/s)
+Periods (3s-16s) "    "  Phase Velocity (km/s) "    " Group Velocity (km/s)
 
 
 
