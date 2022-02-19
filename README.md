@@ -119,14 +119,14 @@ if __name__ == "__main__":
     else:
         print("Only training, testing and predicting modules are available")
 ```
-There are several modules, including ***Train***, ***Test***, ***Predict***.
+There are several modules, including ***Train***, ***Test***, and ***Predict***.
 
 ### (4) Training the Wcycle-GAN <br />
 Change the mode to 'Train', chose the maximum number of epochs, *batch_size* here is not used. ***sample_interval*** controls how often you want to calculate the training loss function. The loss function is calculated by the mean-square error (MSE) between the predicted and labeled Vs profiles on randomly selected 100 grid cells. 
 
 If ***startfrombeg=True***, training starts from random initialization. If not, the training start from the previously trained networks. After set up, run the code.
 
-During the training, there will be output image showing current prediction Vs quality in labeled dataset (Figure S5 of Cai et al. (2022))
+During the training, there will be output image showing current prediction Vs quality in labeled dataset (Figure S5 of *Cai et al. (2022)*)
 ![FigureS5](https://user-images.githubusercontent.com/35436104/154820774-ce44d205-9c67-4e1a-86a1-c9b8e2d3fc1f.JPG)
 
 ### (5) Test the Wcycle-GAN on 100 randomly selected grid cells <br />
@@ -143,11 +143,11 @@ The output will be a 3-D matrix of dimension (4076, 99, 4) in .npy format
 ### (7) Plotting your results
 The plotting scripts is not summarized here but might be provided in the future. Generally, I used Jupyter Notebook to transfer the .npy file to the Velocity text files for different depth sections and plotted them using the Generic Mapping Tools (GMT). The cross-sections are plotted using python scripts. Examples are given below
 
-#### Depth section examples (Figure 7 of Cai et al. (2022))
+#### Depth section examples (Figure 7 of *Cai et al. (2022)*)
 ![Figure7](https://user-images.githubusercontent.com/35436104/154765285-227c78f2-667c-4b53-a232-7c6fb84e2e75.JPG)
 
 
-#### Cross section examples (Figure 8 of Cai et al. (2022))
+#### Cross section examples (Figure 8 of *Cai et al. (2022)*)
 ![Figure8](https://user-images.githubusercontent.com/35436104/154820726-47120732-33d2-4abc-af67-dd3fcf552b3b.JPG)
 
 
