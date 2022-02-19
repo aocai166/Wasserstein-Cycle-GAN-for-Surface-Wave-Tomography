@@ -57,7 +57,21 @@ A (4076, 17, 7) matrix, containing the information of <br />
 ### (3) Download the source code (**Folder 'Src/'**) <br />
 The source code folder contains deep learning Vs inversion of several methods presented in *Cai et al., (2020)*, including **Convolutional Neural Networks (CNN)**, **Cycle-GAN or LS-Cycle-GAN**, **Wcycle-GAN**, **Wcycle-GAN+Position**.
 
-The instruction of the codes are very similar. Here the Wcycle-GAN example (*Wcyclegan-gp-tf_Vs_inv_1D.py*) is illustrated.
+The instruction of the codes are very similar. Here the Wcycle-GAN example (*Wcyclegan-gp-tf_Vs_inv_1D.py*) is illustrated. <br />
+
+First check some basic parameters and file settings
+```
+self.disp_dim = 17
+self.vs_dim = 99
+self.nlabel = 16480
+self.ulabel = 4076
+self.Lbatch_rate = 100
+self.Ubatch_rate = 50
+self.Lsize = self.nlabel // self.Lbatch_rate
+self.Usize = self.ulabel // self.Ubatch_rate
+self.disp_channels = 2
+self.vs_channels = 1
+```
 
 Near the end lines of the code, you can find the code blocks
 ```
@@ -76,6 +90,7 @@ if __name__ == "__main__":
     else:
         print("Only training, testing and predicting modules are available")
 ```
+There are several modules, including <br />
 
 
 To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Vs_inv_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
