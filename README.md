@@ -5,6 +5,7 @@ Code and Benchmark Examples for a paper in JGR: Solid Earth
 Journal of Geophysical Research: Solid Earth, 127, e2021JB023598. <br />
 https://doi.org/10.1029/2021JB023598
 
+## Basic Notations <br />
 You can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0. <br />
 If you show inversion results in a paper or presentation please give a reference to the JGR paper
 
