@@ -88,7 +88,7 @@ self.out_path = 'D:/PycharmProjects/GPUpy/Qiu_data/CVMHTrainingDataset/Final_res
 self.test_dtype = 'npy'
 self.save_freq = 25
 ```
-*self.save_freq*
+*self.save_freq* is the frequency that you would like to save the network parameters (per 25 epochs)
 
 Near the end lines of the code, you can find the code blocks
 ```
