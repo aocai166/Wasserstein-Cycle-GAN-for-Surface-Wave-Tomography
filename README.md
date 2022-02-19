@@ -1,5 +1,5 @@
 # Wasserstein-Cycle-GAN-for-Surface-Wave-Tomography
-Code and Benchmark Examples for a paper in JGR: Solid Earth
+## Code and Benchmark Examples for a paper in JGR: Solid Earth
 
 Cai, A., Qiu, H., & Niu, F. (2022). Semi-supervised surface wave tomography with Wasserstein cycle-consistent GAN: Method and application to Southern California plate boundary region <br />
 Journal of Geophysical Research: Solid Earth, 127, e2021JB023598. <br />
