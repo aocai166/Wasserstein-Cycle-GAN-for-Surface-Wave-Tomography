@@ -34,6 +34,10 @@ To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-
 ![Figure7](https://user-images.githubusercontent.com/35436104/154765285-227c78f2-667c-4b53-a232-7c6fb84e2e75.JPG)
 
 ## References
+*Arjovsky, M., & Bottou, L. (2017). Towards Principled Methods for Training Generative Adversarial Networks. 5th International Conference on Learning Representations. Retrieved from https://arxiv.org/abs/1701.04862v1*
+
+*Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein GAN. Retrieved from http://arxiv.org/abs/1701.07875*
+
 *Herrmann, R. B. (2013). Computer programs in seismology: An evolving tool for instruction and research. Seismological Research Letters, 84(6), 1081–1088. https://doi.org/10.1785/0220110096*
 
 *Qiu, H., Lin, F. C., & Ben-Zion, Y. (2019). Eikonal Tomography of the Southern California Plate Boundary Region. Journal of Geophysical Research: Solid Earth, 124(9), 9755–9779. https://doi.org/10.1029/2019JB017806*
