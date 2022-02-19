@@ -38,9 +38,10 @@ The dataset consists of text file for every grid cell. The name of the file cont
 
 <pre> 1_32.600_239.800.txt  --> Latitude 32.6N; Longitude 120.2W. </pre>
 
-For the data files, it includes: <br />
-<pre> Periods (3s-16s)  Phase Velocity (km/s)  Group Velocity (km/s)  Latitude  Longtitude </pre>
-
+For the data files, they include: <br />
+<pre> Periods (3s-16s)    Phase Velocity (km/s)    Group Velocity (km/s)    Latitude    Longtitude </pre>
+For the Vs profiles, they include: <br />
+<pre> Depth (0km-49.0km)    Shear Wave Velocity (Vs; km/s)
 
 
 #### Unlabeled data <br />
