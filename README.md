@@ -74,9 +74,9 @@ self.vs_channels = 1
 ```
 Here the dispersion data is of dimension *17x2*, and Vs model is of dimension *99x1*. **Lsize** and **Usize** are the batch sizes of labeled and unlabeled data used in training, respectively. <br />
 
-Change the "self.file_train_path" to the path of where you have put the data folder. <br />
-Change "self.out_path" to where you want to have figure outputs and final models. <br />
-You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path. <br />
+Change the *self.file_train_path* to the path of where you have put the data folder. <br />
+Change *self.out_path* to where you want to have figure outputs and final models. <br />
+You don't necessarily need to change *self.test_disp_path*, but just in case, make it the same as the *file_train_path*. <br />
 ```
 # Path to the folder of labeled data (e.g., disp_region/)
 self.file_train_path = 'D:/PycharmProjects/GPUpy/Qiu_data/CVMHTrainingDataset/Train_dat/'
@@ -88,6 +88,7 @@ self.out_path = 'D:/PycharmProjects/GPUpy/Qiu_data/CVMHTrainingDataset/Final_res
 self.test_dtype = 'npy'
 self.save_freq = 25
 ```
+*self.save_freq*
 
 Near the end lines of the code, you can find the code blocks
 ```
