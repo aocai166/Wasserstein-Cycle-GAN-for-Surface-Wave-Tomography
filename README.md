@@ -134,17 +134,17 @@ Change the mode to 'Test'. direction='G2P' is predicting Vs models from dispersi
 ### (6) Predict 1-D *Vs* profiles from real dispersion curves and assemble to pseudo 3-D model <br />
 Change the mode to 'Predict', run the code.
 
-The output will be a 3-D matrix of dimension (4076, 99, 4)
-<pre> Longtitude    Latitude    Depth (0km-49km)    Shear Wave Velocity (Vs; km/s) </pre>
-
-
+The output will be a 3-D matrix of dimension (4076, 99, 4) in .npy format
+<pre> Longtitude    Latitude    Depth (0km-49km)    Shear Wave Velocity Prediction (Vs; km/s) </pre>
 
 ### (7) Plotting your results
+The plotting scripts is not summarized here but might be provided in the future. Generally, I used Jupyter Notebook to transfer the .npy file to the Velocity text files for different depth sections and plotted them using the Generic Mapping Tools (GMT). The cross-sections are plotted using python scripts. Examples are given below
 
-
-To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-gp-tf_Qiu_1D.py", you will see "Train", "Test" and "Predict" modes are available. Simply change the mode value will work. But when you want to use "Test" and "Predict" module, please first generate a folder named "predict" in your output directory.
-
+#### Depth section examples 
 ![Figure7](https://user-images.githubusercontent.com/35436104/154765285-227c78f2-667c-4b53-a232-7c6fb84e2e75.JPG)
+
+
+#### Cross section examples
 
 ## References
 *Arjovsky, M., & Bottou, L. (2017). Towards Principled Methods for Training Generative Adversarial Networks. 5th International Conference on Learning Representations. Retrieved from https://arxiv.org/abs/1701.04862v1*
