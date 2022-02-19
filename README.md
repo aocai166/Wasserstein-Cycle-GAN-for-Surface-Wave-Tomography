@@ -14,12 +14,12 @@ If you have questions when using the package, you can contact me at aocai166@gma
 The code is writing in Python using the TensorFlow framework. A benchmark example is given below. <br />
 
 ## Benckmark Example
-### (1) Setup your environment <br />
+##### (1) Setup your environment <br />
 The Anaconda enviroment file (environment.yml) used in Cai et al. (2022) is provided. You can copy my environment using the yml file. <br />
 An tutorial can be found here: https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html <br />
 Note: due to the time of development of this code (2020), I used TensorFlow 1.14. It might not be compatable with the recent TensorFlow 2 and above versions.
 
-(2) Download the data and the codes
+##### (2) Download the data and the codes <br />
 All the labeled data from CVMH model and unlabeled dispersion curves from Qiu et al. (2019) are prepared in the folder 'Data/'.
 
 To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Vs_inv_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
