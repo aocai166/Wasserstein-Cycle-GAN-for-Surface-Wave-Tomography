@@ -21,7 +21,8 @@ An **tutorial** can be found here: https://docs.conda.io/projects/conda/en/lates
 **Note**: due to the time of development of this code (2020), I used TensorFlow 1.14. It might not be compatable with the recent TensorFlow 2 and above versions.
 
 #### (2) Download the data <br />
-All the labeled data from CVMH model and unlabeled dispersion curves from Qiu et al. (2019) are prepared in the folder *'Data/'*.
+All the labeled data from CVMH model and unlabeled dispersion curves from Qiu et al. (2019) are prepared in the folder **'Data/'**.
+Vs_region
 
 
 To play around with this, please put the code and data to whatever folder you would like to in you computer/server. Look at "Wcyclegan-gp-tf_Vs_inv_1D.py", all the parameters are settled down. What you need to change is the "self.file_train_path" to the path of where you have put the data folder, change "self.out_path" to where you want to have figure outputs and final models. You don't necessarily need to change "self.test_disp_path", but just in case, make it the same as the file_train_path.
@@ -31,3 +32,5 @@ Then you can run this file and the training will start, you need to build up the
 To control trian/test/apply on unlabeled data, look at the bottom of "Wcyclegan-gp-tf_Qiu_1D.py", you will see "Train", "Test" and "Predict" modes are available. Simply change the mode value will work. But when you want to use "Test" and "Predict" module, please first generate a folder named "predict" in your output directory.
 
 ![Figure7](https://user-images.githubusercontent.com/35436104/154765285-227c78f2-667c-4b53-a232-7c6fb84e2e75.JPG)
+
+#### References
