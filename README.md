@@ -145,6 +145,8 @@ The plotting scripts is not summarized here but might be provided in the future.
 
 
 #### Cross section examples (Figure 8 of Cai et al. (2022))
+![Figure8](https://user-images.githubusercontent.com/35436104/154820726-47120732-33d2-4abc-af67-dd3fcf552b3b.JPG)
+
 
 ## References
 *Arjovsky, M., & Bottou, L. (2017). Towards Principled Methods for Training Generative Adversarial Networks. 5th International Conference on Learning Representations. Retrieved from https://arxiv.org/abs/1701.04862v1*
