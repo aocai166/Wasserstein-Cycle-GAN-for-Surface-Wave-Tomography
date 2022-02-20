@@ -6,7 +6,7 @@ Journal of Geophysical Research: Solid Earth, 127, e2021JB023598. <br />
 https://doi.org/10.1029/2021JB023598
 
 ## Basic Notations <br />
-The name of the deep learning method is **Wasserstein Cycle-GAN-GP (WCycle-GAN)**, a hybrid method of **Wasserstein GAN-GP** (*Arjovsky and Bottou, 2017; Arjovsky et al., 2017*) and **Cycle-GAN** (*Yi et al., 2017; Zhu et al., 2017*). **GP** stands for gradient penalty.
+The name of the deep learning method is **Wasserstein Cycle-GAN-GP (WCycle-GAN)**, a hybrid method of **Wasserstein GAN-GP** (*Arjovsky and Bottou, 2017; Arjovsky et al., 2017; Gulrajani et al., 2017*) and **Cycle-GAN** (*Yi et al., 2017; Zhu et al., 2017*). **GP** stands for gradient penalty.
 
 You can redistribute it and/or modify it under the terms of the GNU General Public License version 3.0. <br />
 If you show inversion results in a paper or presentation please give a reference to the JGR paper
@@ -155,6 +155,8 @@ The plotting scripts is not summarized here but might be provided in the future.
 *Arjovsky, M., & Bottou, L. (2017). Towards Principled Methods for Training Generative Adversarial Networks. 5th International Conference on Learning Representations. Retrieved from https://arxiv.org/abs/1701.04862v1*
 
 *Arjovsky, M., Chintala, S., & Bottou, L. (2017). Wasserstein GAN. Retrieved from http://arxiv.org/abs/1701.07875*
+
+*Gulrajani, I., Ahmed, F., Arjovsky, M., Dumoulin, V., & Courville, A. (2017). Improved Training of Wasserstein GANs. Retrieved from http://arxiv.org/abs/1704.00028*
 
 *Herrmann, R. B. (2013). Computer programs in seismology: An evolving tool for instruction and research. Seismological Research Letters, 84(6), 1081–1088. https://doi.org/10.1785/0220110096*
 
