@@ -1,3 +1,12 @@
 # The folder stroes all the labeled and unlabeled data used in the paper.
 # The labeled data is summarized in a folder with the dispersion data on each grid cell as a text file
 # The unlabeled data is stroed in a 3-D matrixs as a npy file 
+
+For the .txt files in it, the name of the file corresponds to its latitude and 360-longitude.
+
+For example, 32.700_243.150.txt corresponds to the dispersion data at 32.7E and 116.85W.
+For each .txt file in disp_True_with_uncer.zip, each column corresponds to (5 columns):
+Period,     V_phase,      V_group,      Uncertainty_phase,      Uncertainty_group
+
+For each .txt file in other .zip file, each column corresponds to (3 columns):
+Period,     V_phase (predicted),     V_group (predicted)
