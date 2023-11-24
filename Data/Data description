@@ -10,3 +10,8 @@ Period,     V_phase,      V_group,      Uncertainty_phase,      Uncertainty_grou
 
 For each .txt file in other .zip file, each column corresponds to (3 columns):
 Period,     V_phase (predicted),     V_group (predicted)
+
+
+For .npz files
+Inv_results_Rinv.npz
+Include the Vs model for CVM-H and Vs model from Qiu et al. (2019）， called "vs_final" in the .npz file
