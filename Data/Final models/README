@@ -1,0 +1,6 @@
+#Final velocity models 
+#files in ./Vel_* are used to create dispersion curves of phase/group velocities.
+#    file format: depth, vs, vp, density
+#   0.00000    3.31500    5.90100    2.69600
+#   0.50000    3.31500    5.90100    2.69600
+#   1.00000    3.36000    5.98000    2.71200
