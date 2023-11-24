@@ -14,4 +14,7 @@ Period,     V_phase (predicted),     V_group (predicted)
 
 For .npz files
 Inv_results_Rinv.npz
-Include the Vs model for CVM-H and Vs model from Qiu et al. (2019）， called "vs_final" in the .npz file
+Include the Vs model for CVM-H and Vs model from Qiu et al. (2019）， called "vs_final" in the .npz file.
+
+inv_CVM-H_topo_corr_WCGANinv_full.npz
+Include the final Vs model using WCGAN and Vs model using WCGAN with position information.
